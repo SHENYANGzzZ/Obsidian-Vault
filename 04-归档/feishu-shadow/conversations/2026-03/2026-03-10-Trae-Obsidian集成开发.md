@@ -122,7 +122,7 @@ tags: #conversation #feishu-shadow #obsidian #skill
 - [[知识管理的本质是建立连接]]
 - [[笔记链接的艺术]]
 - [[如何建立笔记链接网络]]
-- [[学习Obsidian最佳实践]]
+- `学习Obsidian最佳实践` 项目已归档至 `04-归档`
 - [[Zettelkasten方法]]
 - [[原子笔记的价值]]
 

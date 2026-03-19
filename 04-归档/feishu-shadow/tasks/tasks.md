@@ -132,4 +132,4 @@ tags: #tasks #feishu-shadow
 
 - [[2026-03-10-Trae-Obsidian集成开发 - 对话记录]]
 - [[2026-03-10 开发日志]]
-- [[学习Obsidian最佳实践]]
+- `学习Obsidian最佳实践` 项目已归档至 `04-归档`
