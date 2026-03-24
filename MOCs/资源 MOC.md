@@ -33,6 +33,7 @@ SORT file.mtime DESC
 ### 工具使用
 - [[Obsidian插件推荐]]
 - [[使用Git同步Obsidian]]
+- [[iTerm2配置与使用指南]]
 
 ### 个人成长
 ```dataview
