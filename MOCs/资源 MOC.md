@@ -34,6 +34,9 @@ SORT file.mtime DESC
 - [[Obsidian插件推荐]]
 - [[使用Git同步Obsidian]]
 - [[iTerm2配置与使用指南]]
+- [[开发环境配置]]
+- [[Git常用命令]]
+- [[VS Code配置]]
 
 ### 个人成长
 ```dataview
