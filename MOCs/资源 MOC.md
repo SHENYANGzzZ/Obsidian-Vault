@@ -37,6 +37,8 @@ SORT file.mtime DESC
 - [[开发环境配置]]
 - [[Git常用命令]]
 - [[VS Code配置]]
+- [[本地 Skills 索引]]
+- [[本地仓库索引]]
 
 ### 个人成长
 ```dataview
