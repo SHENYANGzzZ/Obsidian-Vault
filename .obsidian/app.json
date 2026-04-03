@@ -1,5 +1,6 @@
 {
   "uriCallbacks": true,
   "promptDelete": false,
-  "newFileLocation": "root"
+  "newFileLocation": "root",
+  "alwaysUpdateLinks": true
 }
