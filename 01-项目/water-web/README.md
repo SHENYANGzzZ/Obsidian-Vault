@@ -1,118 +1,89 @@
-# water-web 项目笔记
-
 ---
-
 created: 2026-03-30
-updated: 2026-03-30
-tags: #项目 #water-web #GIS #Vue
+updated: 2026-04-09
+tags: [项目, water-web, GIS, Vue]
 aliases:
   - water-web项目笔记
   - water-web
   - 港区水务管理平台
-
 ---
 
-## 📋 项目概览
+# water-web 项目笔记
+
+## 项目概览
 
 **项目名称**：港区水务管理平台  
 **技术栈**：Vue 3 + TypeScript + Element Plus + ArcGIS  
 **项目类型**：水务行业管理系统前端
 
-## 🎯 项目目标
+## 当前阶段
 
-### 当前阶段：GIS功能增强
+### GIS 功能增强
 
-1. **管道粗细按管径显示** - 基于c_SIZE字段动态调整线宽
-2. **管道流动动画效果** - 为有流向的管道添加粒子流动效果
-3. **地图上阀门开关控制** - 点击阀门节点可直接开关操作
+1. **管道粗细按管径显示**：基于 `c_SIZE` 字段动态调整线宽
+2. **管道流动动画效果**：为有流向的管道添加粒子流动效果
+3. **地图上阀门开关控制**：点击阀门节点可直接开关操作
 
-## 🧭 笔记分工
+## 笔记分工
 
-- 本目录：统一承载项目执行资料与技术沉淀，包含计划、任务、开发日志、对话记录、专题技术笔记
-- 当前主维护目录：`01-项目/water-web/`
-- 项目入口以本页为准
+- `05-每日/`：每日原始输入入口，先记录当天实际工作内容
+- `worklog/`：从每日归档后的项目工作记录，保留项目时间线
+- `plans/`：阶段计划、专题方案、跨天或跨周内容
+- `weekly-reports/`：提交给公司的周报，不承载内部原始工作记录
+- `README.md`：项目入口、规则说明和关键链接
 
-## 📁 目录结构
+## 目录结构
 
-```
+```text
 water-web/
-├── plans/                 # 项目计划
-│   ├── 下周开发计划.md    # GIS功能增强开发计划
-│   └── ArcGIS技术验证计划.md # 技术可行性验证计划
-├── tasks.md              # 任务进度跟踪
-├── conversations/         # 对话记录
-└── dev-logs/             # 开发日志
+├── README.md
+├── plans/                  # 阶段计划、专题方案
+├── worklog/                # 从每日归档后的项目工作记录
+└── weekly-reports/         # 提交给公司的周报
 ```
 
-## 🔧 技术要点
+## 记录规则
 
-### GIS技术栈
+### 日常记录
 
-- **地图引擎**：ArcGIS API for JavaScript 4.25
-- **符号系统**：CIMSymbol（支持复杂样式和动画）
-- **数据来源**：getDotDirect()获取管线连接关系，getNodeAll()获取节点数据
+- 每天先写到 `05-每日/`
+- 每日中的项目工作按项目分块记录
+- 项目块标题统一使用 `## [[项目名]]`
+- 块内内容自由书写，不强制限定“完成情况 / 问题 / 未完成”等字段
 
-### 关键文件
+### 项目归档
 
-- `src/views/business/arcgis/index.vue` - GIS地图主页面
-- `src/views/business/arcgis/maphook.ts` - 地图工具函数
-- `src/views/business/arcgis/dialog/nodePopupTemp.vue` - 节点详情弹窗
+- 每周整理一次，把每日中的项目区块原样归档到对应项目的 `worklog/`
+- 归档时保留原始内容表达，不做摘要改写
+- 同项目同日期内容合并，完全重复的文本去重
+- 归档完成后，可从每日中删除已归档的项目区块
 
-## 📊 项目进度
+### 长周期内容
 
-**当前状态**：🟢 进行中  
-**整体进度**：15%  
-**当前迭代**：第2周 - GIS功能增强
+- 放不进某一天的内容，再进入 `plans/`
+- `plans/` 只保留阶段计划、专题验证、路线设计等内容
+- 不再单独维护 `tasks.md` 或 `dev-logs/`
 
-### 已完成
+## 关键文件
 
-- [x] 项目技术栈分析
-- [x] GIS功能现状调研
-- [x] 技术验证计划制定
-- [x] 开发计划制定
+- `src/views/business/arcgis/index.vue`：GIS 地图主页面
+- `src/views/business/arcgis/maphook.ts`：地图工具函数
+- `src/views/business/arcgis/dialog/nodePopupTemp.vue`：节点详情弹窗
 
-### 进行中
+## 当前重点
 
-- [ ] 技术验证执行
-- [ ] 管径显示功能开发
-- [ ] 流动动画功能开发
+1. 技术验证结果持续沉淀到 `plans/`
+2. 每日执行过程统一写入 `05-每日/`
+3. 每周按项目归档到 `worklog/`
+4. 对公司输出继续维护 `weekly-reports/`
 
-## 🔗 相关链接
-
-### Obsidian笔记
+## 相关链接
 
 - [[待开发计划]]
 - [[ArcGIS技术验证计划]]
-- [[tasks|任务进度]]
-
-### 项目文档
-
-- AGENTS.md - 项目开发规范
-- 项目分析报告.md - 项目架构分析
-
-## 📝 开发规范
-
-### 代码风格
-
-- 使用Vue 3 Composition API + `<script setup>`
-- 业务逻辑提取到`utils/hooks.tsx`
-- 使用`import type`进行类型导入
-- 错误处理使用`.catch()`而不是`try/catch`
-
-### 提交规范
-
-- 遵循Conventional Commits格式
-- 类型：feat / fix / docs / style / refactor / test / chore
-- 示例：`feat(arcgis): 实现管道粗细按管径显示`
-
-## 🚀 下一步行动
-
-1. **技术验证** - 验证ArcGIS动画支持
-2. **管径显示** - 实现基于c_SIZE的管道粗细显示
-3. **流动动画** - 实现管道流动粒子效果
-4. **阀门控制** - 实现地图上阀门开关控制
+- [[01-项目/water-web/weekly-reports/2026-W14|2026-W14 周报]]
 
 ---
 
-**最后更新**：2026-03-30  
-**更新者**：AI助手
+**最后更新**：2026-04-09  
+**更新者**：Codex

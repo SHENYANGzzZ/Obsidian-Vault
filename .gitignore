@@ -1,15 +1,20 @@
 .DS_Store
 .trash/
-workspace
-workspace.json
 
-# Obsidian
+# Obsidian local state
 .obsidian/plugins/
 .obsidian/themes/
 .obsidian/workspace*
 .obsidian/cache/
 .obsidian/app.json
+.obsidian/appearance.json
 .obsidian/community-plugins.json
+.obsidian/graph.json
+.obsidian/hotkeys.json
+.obsidian/webviewer.json
+
+# Local tool residue
+.trae/
 
 # Temporary files
 *.tmp
@@ -17,7 +22,6 @@ workspace.json
 
 # OS files
 Thumbs.db
-.DS_Store
 
 # Editor
 .vscode/
