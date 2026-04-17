@@ -1,6 +1,6 @@
 ---
 created: 2026-03-30
-updated: 2026-04-10
+updated: 2026-04-17
 tags: [项目, water-web, GIS, Vue]
 aliases:
   - water-web项目笔记
@@ -83,8 +83,9 @@ water-web/
 - [[ArcGIS技术验证计划]]
 - [[01-项目/water-web/weekly-reports/2026-W14|2026-W14 周报]]
 - [[01-项目/water-web/weekly-reports/2026-W15|2026-W15 周报]]
+- [[01-项目/water-web/weekly-reports/2026-W16|2026-W16 周报]]
 
 ---
 
-**最后更新**：2026-04-10  
+**最后更新**：2026-04-17  
 **更新者**：Codex
