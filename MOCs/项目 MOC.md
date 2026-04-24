@@ -77,7 +77,6 @@ SORT file.mtime DESC
 
 - [[PARA方法介绍]]
 - [[知识管理 MOC]]
-- [[领域 MOC]]
 
 ---
 

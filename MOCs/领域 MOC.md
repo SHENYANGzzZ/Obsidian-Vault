@@ -50,7 +50,6 @@ SORT file.mtime DESC
 ```
 
 - [[个人知识管理]]
-- [[PARA方法介绍]]
 - [[Zettelkasten方法]]
 
 ## 💪 健康管理
@@ -121,7 +120,6 @@ SORT file.mtime DESC
 
 - [[知识管理 MOC]]
 - [[项目 MOC]]
-- [[个人知识管理]]
 
 ---
 
